@@ -1,5 +1,8 @@
 <?php 
-require 'vendor/autoload.php'
+require 'vendor/autoload.php';
+define('__CONFIG__',true);
+require_once 'include/config.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -23,51 +26,22 @@ require 'vendor/autoload.php'
     <![endif]-->
   </head>
   <body>
-  
-
-      <div class="container-fluid">
-
-  <div class="row">
-    "     "
-  </div>
-  <div class="row">
-    <div class="col-sm-3" ></div>
-    <div class="col-sm-6" style="background-color:lavenderblush;">
-
-    <div class="container">
-  
-        <form class="form-signin">
-          <h2 class="form-signin-heading">Please sign in</h2>
-          <label for="inputEmail" class="sr-only">Email address</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-          
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-          </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        </form>
-  
-      </div> <!-- /container -->
+  <H1 style=" float: none; margin: 0 auto;">Hello welcome !</H1>
+    </br>
+<p>
 
 
-
-    </div>
-    <div class="col-sm-3" ></div>
-  </div>
-</div>
+<a href="/phpLoginSystem/login.php">Login</a> </br>
+<a href="/phpLoginSystem/reg.php">Registration </a>
 
 
+</p>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-<script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
+<?php
+require_once'include/footer.php';
+?>
+
 
   </body>
 </html>
